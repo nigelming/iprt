@@ -30,7 +30,7 @@ def main():
 		results.append(info[netifaces.AF_INET][0]['addr'])
 	print(results)
 	result= pingtest(dgw)
-	#print(type(dgw))
+	print(type(dgw))
 	#if sdgw==u'19' and  pingts:
 		#print(sdgw)
 		#os.system("route add 19.0.0.0 mask 255.0.0.0 " +dgw)
