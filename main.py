@@ -24,7 +24,7 @@ def main():
 	for i in netifaces.interfaces():
 		info = netifaces.ifaddresses(i)
 		print(info[netifaces.AF_INET][0]['addr'])
-		#print(info)
+		print(info)
 		if netifaces.AF_INET not in info:
 			continue
 		results.append(info[netifaces.AF_INET][0]['addr'])
